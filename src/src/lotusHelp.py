@@ -140,25 +140,50 @@ class UIHelpWindow(QWidget):
         self.insertImageFunc(assets["help_previous_notes_1"], self.cursor)
         self.helpTextEditor.append('\n')
 
-        self.helpTextEditor.append(
-            'Clicking on the desired file will open it in a new notes window for you to edit further.\n')
-
-        # Scheduled Notes Section
+        # Schedule Section
         self.helpTextEditor.setCurrentFont(QFont('Arial'))
         self.helpTextEditor.setFontUnderline(True)
         self.helpTextEditor.setFontPointSize(24)
-        self.helpTextEditor.append('Scheduled Notes')
+        self.helpTextEditor.append('Schedule')
 
         self.helpTextEditor.setCurrentFont(QFont('Arial'))
         self.helpTextEditor.setFontUnderline(False)
         self.helpTextEditor.setFontPointSize(10)
         self.helpTextEditor.append('\n')
+        self.helpTextEditor.append(
+            'By clicking on the Schedule button, the calendar window is displayed. As a new user, the calendar will have no populated events. You can add a new class by clicking the Add Scheduled Notes button.\n')
+        self.insertImageFunc(assets["help_schedule_1"], self.cursor)
+        self.helpTextEditor.append('\n')
 
         self.helpTextEditor.append(
-            'By clicking on the Schedule button, a new window will appear which allow the user to make scheduled notes. This is optimal for repeating events, such as classes.\n')
-        #self.insertImageFunc(assets[" "], self.cursor)
-        #self.helpTextEditor.append('\n')
+            'Once clicked, a new window will appear where you can fill in important details about this class.\n')
+        self.insertImageFunc(assets["help_schedule_2"], self.cursor)
+        self.helpTextEditor.append('\n')
 
+        self.helpTextEditor.append(
+            'Once it is saved, this new class will appear in the calendar.\n')
+        self.insertImageFunc(assets["help_schedule_3"], self.cursor)
+        self.helpTextEditor.append('\n')
+
+        self.helpTextEditor.append(
+            'By clicking on a specific day, that day\'s class events will be displayed.\n')
+        self.insertImageFunc(assets["help_schedule_4"], self.cursor)
+        self.helpTextEditor.append('\n')
+
+        self.helpTextEditor.append(
+            'In this case, when December 2nd is clicked as above, the Example Class for December 2nd is displayed. By clicking on the notes, a new notes page is opened.\n')
+        self.insertImageFunc(assets["help_schedule_5"], self.cursor)
+        self.helpTextEditor.append('\n')
+        self.insertImageFunc(assets["help_schedule_6"], self.cursor)
+        self.helpTextEditor.append('\n')
+
+        self.helpTextEditor.append(
+            'Once you finish writing your notes and save them, they will be available to review or edit by clicking on the day and class event as before.\n')
+        self.insertImageFunc(assets["help_schedule_4"], self.cursor)
+        self.helpTextEditor.append('\n')
+        self.insertImageFunc(assets["help_schedule_5"], self.cursor)
+        self.helpTextEditor.append('\n')
+        
         #self.helpTextEditor.append(
         #    'Clicking on the desired file will open it in a new notes window for you to edit further.\n')
 
